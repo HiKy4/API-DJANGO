@@ -63,7 +63,7 @@ def recommend_products(current_cart, patterns):
             recommendations.append(pattern[-1])
 
     # Loại bỏ các sản phẩm trùng lặp trong recommendations
-    unique_recommendations = list(set(recommendations))
+    unique_recommendations = list(set(recommendations))[:3]
     unique_recommendations.sort()  # Sắp xếp các sản phẩm theo thứ tự từ điển (nếu cần)
 
     return unique_recommendations
